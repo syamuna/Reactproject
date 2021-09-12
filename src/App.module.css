@@ -1,0 +1,34 @@
+.Wrapper {
+  overflow: hidden;
+  display: grid;
+
+  grid-template-rows: 45px auto auto auto;
+  grid-template-areas:
+    "header"
+    "filter"
+    "search"
+    "products";
+}
+
+@media screen and (min-width: 760px) {
+  .Wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: 55px auto auto;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+      "header header"
+      "search search"
+      "filter products"; */
+  }
+  .Searchbar {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+  }
+}
+.Breadcrumb{
+  color: aqua;
+  width: 50%;
+}
